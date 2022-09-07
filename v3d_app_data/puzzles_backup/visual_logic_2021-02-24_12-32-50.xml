@@ -1,0 +1,155 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="682.9999999999999" scrolly="339" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="901.3295095463036" scrolly="812.3962017952836" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="l6^U^Xr{]GvIDAWQ[}}y" x="-730" y="-810">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">visibility</field>
+      <field name="PARENT">TRUE</field>
+      <value name="VALUE">
+        <block type="text" id="4H,{C%UCpctAdEK2rQTC">
+          <field name="TEXT">false</field>
+        </block>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="P:r+7=,vrCxS7XPd9fXS">
+          <field name="TEXT">.interface-container</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setTimeout" id="M:z!6|xg`0JR4|r$_]x?">
+          <value name="VALUE">
+            <shadow type="math_number" id="Ga;_1q0TH;7JkDl$OImT">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="setCSSRuleStyle" id="}cNd}8.rCj3Xh5I|VFLD">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">visibility</field>
+              <field name="PARENT">TRUE</field>
+              <value name="VALUE">
+                <block type="text" id="#bK6uApXvW/[Ax5*[M^`">
+                  <field name="TEXT">true</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="V85X?7jlMleeTYu{X_r!">
+                  <field name="TEXT">.interface-container</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setTimeout" id="AifWEwXJ%;AFgPTJT}dL">
+                  <value name="VALUE">
+                    <shadow type="math_number" id=":Xr}Vte}dJ#BM6?ge}o,">
+                      <field name="NUM">5</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="autoRotateCamera" id="@~[DAqo:%(0A*?sT$T8S">
+                      <field name="ON_OFF">ON</field>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="?)Snbj`7]Xq(jAG(ts9.">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenClicked" id="Oc^)YQ6:Z`!5#Jj,5PI$">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="Nsb+g{/-zw1@9T#N58ny">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="allObjectList" id="eQnNSeY=2ly=9#2@pFGB"/>
+                      </value>
+                      <statement name="DO">
+                        <block type="autoRotateCamera" id="g3xJDxu_jS-t(*d/_k2/">
+                          <field name="ON_OFF">OFF</field>
+                          <value name="SPEED">
+                            <shadow type="math_number" id="8Q3iu|SVm89TZEp_9~OJ">
+                              <field name="NUM">2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setTimeout" id="T4vi$)IEvitSwdQX{jmH">
+                              <value name="VALUE">
+                                <shadow type="math_number" id="|#*x]?MZmLW$Z63}:,u$">
+                                  <field name="NUM">5</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="autoRotateCamera" id="jt$|LuczZ5~W1-K21GE2">
+                                  <field name="ON_OFF">ON</field>
+                                  <value name="SPEED">
+                                    <shadow type="math_number" id="kyO1M1`kieifp~hdM~ZQ">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=";fB;k__ly@KC+[yq8sJ[" x="-1030" y="-390">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="PPx7T?:?.Gc7#3{BbO,$">
+          <field name="TEXT">unfold-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="hide" id="E,E`0kWYKujvs.1k|%Dt">
+          <value name="VALUE">
+            <shadow type="objectList" id="mGjLa_?[w0xSJXb@0D5U">
+              <field name="FIELDNAME">corkscrew</field>
+            </shadow>
+            <block type="groupList" id="B!lD::ip^1xnHIC[3KPK">
+              <field name="FIELDNAME">swiss_army_knife_model</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id=";Gf,bQ=]4pci(`3#f#Q_">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="k1v]$@^%`Zs0GZK-wb|z">
+              <field name="TEXT">fold-button</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="show" id="iP6Xs*#)]z@b9iFTs|J2">
+              <value name="VALUE">
+                <shadow type="objectList" id="U_wefO+Y0{~7bx.zK+kP">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="groupList" id="*$:}~!j+9gCFb1LIbdya">
+                  <field name="FIELDNAME">swiss_army_knife_model</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1217.9999633789062" viewport-y="28" viewport-w="300" viewport-h="377" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

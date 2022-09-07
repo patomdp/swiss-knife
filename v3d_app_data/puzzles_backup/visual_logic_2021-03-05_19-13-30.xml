@@ -1,0 +1,354 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="682.9999999999999" scrolly="339" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="802.9492664564543" scrolly="365.46382849332696" scale="0.8992500772390042">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="ur1glP5[%:fN%:3G,^%!" type="">Unfolded</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="M:z!6|xg`0JR4|r$_]x?" x="-730" y="-813">
+      <value name="VALUE">
+        <shadow type="math_number" id="Ga;_1q0TH;7JkDl$OImT">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setCSSRuleStyle" id="}cNd}8.rCj3Xh5I|VFLD">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">visibility</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="#bK6uApXvW/[Ax5*[M^`">
+              <field name="TEXT">visible</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="V85X?7jlMleeTYu{X_r!">
+              <field name="TEXT">.interface-container</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setTimeout" id="AifWEwXJ%;AFgPTJT}dL">
+              <value name="VALUE">
+                <shadow type="math_number" id=":Xr}Vte}dJ#BM6?ge}o,">
+                  <field name="NUM">5</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="autoRotateCamera" id="@~[DAqo:%(0A*?sT$T8S">
+                  <field name="ON_OFF">ON</field>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="?)Snbj`7]Xq(jAG(ts9.">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenClicked" id="Oc^)YQ6:Z`!5#Jj,5PI$">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="Nsb+g{/-zw1@9T#N58ny">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="allObjectList" id="eQnNSeY=2ly=9#2@pFGB"/>
+                  </value>
+                  <statement name="DO">
+                    <block type="autoRotateCamera" id="g3xJDxu_jS-t(*d/_k2/">
+                      <field name="ON_OFF">OFF</field>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="8Q3iu|SVm89TZEp_9~OJ">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="T4vi$)IEvitSwdQX{jmH">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="|#*x]?MZmLW$Z63}:,u$">
+                              <field name="NUM">5</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="autoRotateCamera" id="jt$|LuczZ5~W1-K21GE2">
+                              <field name="ON_OFF">ON</field>
+                              <value name="SPEED">
+                                <shadow type="math_number" id="kyO1M1`kieifp~hdM~ZQ">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=";Gf,bQ=]4pci(`3#f#Q_" disabled="true" x="-1430" y="-650">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="=D;RGgu8L.#P-C@.lIiv" x="-1510" y="-490">
+      <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="Gu$eo=koYZ_mQoDNYQ6f">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=";fB;k__ly@KC+[yq8sJ[" x="-1510" y="-430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="PPx7T?:?.Gc7#3{BbO,$">
+          <field name="TEXT">unfold-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="+)6Ntl(!43{SCTE@@9zo">
+          <value name="IF0">
+            <block type="logic_compare" id="A]C[A4x_hn2R,fV0%X~X">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="n+_.gCT-n(S/+5dD5#ov">
+                  <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="NOUz3n@TLghtdK*9Sdka">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playSound" id="sy;Ki_r;kU/-6O!39P45">
+              <field name="LOOP">FALSE</field>
+              <value name="VALUE">
+                <block type="loadSoundAdv" id=")1/l6a$]gAaq=XEsNy.L">
+                  <field name="TYPE">SOUND</field>
+                  <value name="URL">
+                    <shadow type="text" id="i=hp{bBV=nwd8]R8N{zJ">
+                      <field name="TEXT">./assets/sounds/unfold.mp3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="3Ju-i/OIf.jb|72K^5D8">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="$7Z=qXf@+v0(Yhstl|%}">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="_n2Ordh1oVdkhN8/Gx2X">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="x8t*6GFm=%^Rh9$,]C3z">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="groupList" id="B!lD::ip^1xnHIC[3KPK">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="ie:|N-Cwvn@W[R:m|snl">
+                      <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="v2EkWlvEHh/2bk2]n_I)">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="9_{3y@/7NF2-/fwH,-{e" x="-310" y="-430">
+      <field name="TEXT">wood-button</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text" id="lE;17n2@g,3Rrz]XQ+0%" x="10" y="-410">
+      <field name="TEXT">carbon-button</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="pCKGgj5mqYR#}^rt^kbN" x="-430" y="-330">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="/75Q[(S;Y8FHl/+=4|/!">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="volume" id="mV:ZoCwj7XWE!8/]7+5_" x="-1750" y="-190">
+      <value name="VALUE">
+        <block type="loadSoundAdv" id="!HGSo2,{X!!o*[JXBrT!">
+          <field name="TYPE">SOUND</field>
+          <value name="URL">
+            <shadow type="text" id=";Rs/+~0aa;E28,+8j0LS">
+              <field name="TEXT">./assets/sounds/unfold.mp3</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <value name="VOLUME">
+        <shadow type="math_number" id="W@$MP;,[okdO=iv~dM4d">
+          <field name="NUM">0.1</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="volume" id="$-@T~du/0smx:Y`kN|dY">
+          <value name="VALUE">
+            <block type="loadSoundAdv" id="/w|7=)g]_!n@9nZUQ?TV">
+              <field name="TYPE">SOUND</field>
+              <value name="URL">
+                <shadow type="text" id="Lg2RrN^#g!;tUL12{Zq_">
+                  <field name="TEXT">./assets/sounds/fold.mp3</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <value name="VOLUME">
+            <shadow type="math_number" id="kq[LRCowkJ`d]dbq/nRV">
+              <field name="NUM">0.1</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="7W4@vDwPYG,#5zMM)sd." x="-450" y="-130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="xX:`sEc|uA*K|@;;,:Jh">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="?fjJf[;cru{iVJcN6n2V">
+          <field name="TEXT">plastic-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="~Bf2Hr^ijMLkT,199B))">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Y}p)s1Fzb2?E4ph=v-os">
+              <field name="FIELDNAME">chrome</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="XO5/!g3eBwEl1cZh6Q,2">
+              <field name="FIELDNAME">front_cover</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="*V[GqH:r.{Xm7}G[j5mm">
+              <value name="VALUE2">
+                <shadow type="materialList" id="q@0!Bqhf3YY*z94FZ?CJ">
+                  <field name="FIELDNAME">chrome</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="F!|3@@;h-^qa$,XEA?Jc">
+                  <field name="FIELDNAME">back_cover</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="PeBF{!S_po$F-R$Fa?P|" x="-1550" y="-70">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="k1v]$@^%`Zs0GZK-wb|z">
+          <field name="TEXT">fold-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="40=G:nGuXSi-J0|Eap6?">
+          <value name="IF0">
+            <block type="logic_compare" id="PIjqUI~b)f_CwA6ZHs4L">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="Q(wU^6;VzY#qZ!)nXYL!">
+                  <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="{@6Q+,6ul}xGHvdJk?ku">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playSound" id="OZ.%w$lylTQ3qhw8#%?Y">
+              <field name="LOOP">FALSE</field>
+              <value name="VALUE">
+                <block type="loadSoundAdv" id="ASk@D8!T~+ZR5~^T$NaJ">
+                  <field name="TYPE">SOUND</field>
+                  <value name="URL">
+                    <shadow type="text" id="dZVK682K5;Uyb8H*rh4^">
+                      <field name="TEXT">./assets/sounds/fold.mp3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="BoO~`pVFwM/;LvAz}U*C">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="+-t{0(*-.f(6n^(Il26I">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="groupList" id="5L!)vJ9t3X3c((ZZLr^?">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="=dq.iwUi,|tDNjAl=F;7">
+                      <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="PAio.fDV]fIs=^GZqVAJ">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1217.9999633789062" viewport-y="28" viewport-w="300" viewport-h="377" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

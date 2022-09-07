@@ -1,0 +1,124 @@
+html,
+body,
+iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.swiss {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.interface-container {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  /* border: solid red 1px; */
+  height: 100vh;
+  /* margin: 20px; */
+  background: black;
+}
+
+@media screen and (max-width: 500px) {
+  .interface-container {
+    flex-direction: row;
+    align-items: baseline;
+    top: auto;
+    height: auto;
+    margin: auto;
+    width: 100vw;
+  }
+  .right {
+    bottom: 0px;
+  }
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
+h2 {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+button {
+  margin: 20px 10px;
+  height: 60px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: rgba(239, 239, 239, 0);
+
+  border-style: none;
+  background-size: cover;
+}
+
+/*Iconos de botones
+
+#unfold-button
+#fold-button
+#annotation-button
+#carbon-button
+#plastic-button
+#wood-button
+background-image: url('images/my-image.png');
+*/
+
+#unfold-button {
+  background-image: url("../assets/icons/unfold_knife_button.svg");
+}
+
+#fold-button {
+  background-image: url("../assets/icons/fold_knife_button.svg");
+}
+
+#annotation-button {
+  background-image: url("../assets/icons/annotation_hidden_button.svg");
+}
+
+#carbon-button {
+  background-image: url("../assets/icons/carbon_button.png");
+}
+
+#plastic-button {
+  background-image: url("../assets/icons/plastic_button.png");
+}
+
+#wood-button {
+  background-image: url("../assets/icons/wood_button.png");
+}
+
+/*RESPONSIVOS*/
+
+/*
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+El color de fondo de esta página cambia según el ancho de la pantalla:
+
+si es menor de 500px, el color es azul
+si es mayor o igual a 500px, el color es rojo
+El ancho actual es 598px
+*/

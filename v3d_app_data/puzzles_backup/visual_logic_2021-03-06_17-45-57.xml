@@ -1,0 +1,996 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="682.9999999999999" scrolly="339" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="895.8843908829149" scrolly="114.68208178702116" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="ur1glP5[%:fN%:3G,^%!" type="">Unfolded</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="M:z!6|xg`0JR4|r$_]x?" disabled="true" x="-730" y="-813">
+      <value name="VALUE">
+        <shadow type="math_number" id="Ga;_1q0TH;7JkDl$OImT">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setCSSRuleStyle" id="}cNd}8.rCj3Xh5I|VFLD">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">visibility</field>
+          <field name="PARENT">TRUE</field>
+          <value name="VALUE">
+            <block type="text" id="#bK6uApXvW/[Ax5*[M^`">
+              <field name="TEXT">visible</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="V85X?7jlMleeTYu{X_r!">
+              <field name="TEXT">.interface-container</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setTimeout" id="AifWEwXJ%;AFgPTJT}dL">
+              <value name="VALUE">
+                <shadow type="math_number" id=":Xr}Vte}dJ#BM6?ge}o,">
+                  <field name="NUM">5</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="autoRotateCamera" id="@~[DAqo:%(0A*?sT$T8S">
+                  <field name="ON_OFF">ON</field>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="?)Snbj`7]Xq(jAG(ts9.">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenClicked" id="Oc^)YQ6:Z`!5#Jj,5PI$">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="Nsb+g{/-zw1@9T#N58ny">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="allObjectList" id="eQnNSeY=2ly=9#2@pFGB"/>
+                  </value>
+                  <statement name="DO">
+                    <block type="autoRotateCamera" id="g3xJDxu_jS-t(*d/_k2/">
+                      <field name="ON_OFF">OFF</field>
+                      <value name="SPEED">
+                        <shadow type="math_number" id="8Q3iu|SVm89TZEp_9~OJ">
+                          <field name="NUM">2</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="T4vi$)IEvitSwdQX{jmH">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="|#*x]?MZmLW$Z63}:,u$">
+                              <field name="NUM">5</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="autoRotateCamera" id="jt$|LuczZ5~W1-K21GE2">
+                              <field name="ON_OFF">ON</field>
+                              <value name="SPEED">
+                                <shadow type="math_number" id="kyO1M1`kieifp~hdM~ZQ">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=";Gf,bQ=]4pci(`3#f#Q_" disabled="true" x="-1430" y="-650">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="=D;RGgu8L.#P-C@.lIiv" x="-1510" y="-490">
+      <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="Gu$eo=koYZ_mQoDNYQ6f">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=";fB;k__ly@KC+[yq8sJ[" x="-1510" y="-430">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="PPx7T?:?.Gc7#3{BbO,$">
+          <field name="TEXT">unfold-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="+)6Ntl(!43{SCTE@@9zo">
+          <value name="IF0">
+            <block type="logic_compare" id="A]C[A4x_hn2R,fV0%X~X">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="n+_.gCT-n(S/+5dD5#ov">
+                  <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="NOUz3n@TLghtdK*9Sdka">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playSound" id="sy;Ki_r;kU/-6O!39P45">
+              <field name="LOOP">FALSE</field>
+              <value name="VALUE">
+                <block type="loadSoundAdv" id=")1/l6a$]gAaq=XEsNy.L">
+                  <field name="TYPE">SOUND</field>
+                  <value name="URL">
+                    <shadow type="text" id="i=hp{bBV=nwd8]R8N{zJ">
+                      <field name="TEXT">./assets/sounds/unfold.mp3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="3Ju-i/OIf.jb|72K^5D8">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="$7Z=qXf@+v0(Yhstl|%}">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="_n2Ordh1oVdkhN8/Gx2X">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList" id="x8t*6GFm=%^Rh9$,]C3z">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="groupList" id="B!lD::ip^1xnHIC[3KPK">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="ie:|N-Cwvn@W[R:m|snl">
+                      <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="v2EkWlvEHh/2bk2]n_I)">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="volume" id="mV:ZoCwj7XWE!8/]7+5_" x="-1750" y="-190">
+      <value name="VALUE">
+        <block type="loadSoundAdv" id="!HGSo2,{X!!o*[JXBrT!">
+          <field name="TYPE">SOUND</field>
+          <value name="URL">
+            <shadow type="text" id=";Rs/+~0aa;E28,+8j0LS">
+              <field name="TEXT">./assets/sounds/unfold.mp3</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <value name="VOLUME">
+        <shadow type="math_number" id="W@$MP;,[okdO=iv~dM4d">
+          <field name="NUM">0.1</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="volume" id="$-@T~du/0smx:Y`kN|dY">
+          <value name="VALUE">
+            <block type="loadSoundAdv" id="/w|7=)g]_!n@9nZUQ?TV">
+              <field name="TYPE">SOUND</field>
+              <value name="URL">
+                <shadow type="text" id="Lg2RrN^#g!;tUL12{Zq_">
+                  <field name="TEXT">./assets/sounds/fold.mp3</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <value name="VOLUME">
+            <shadow type="math_number" id="kq[LRCowkJ`d]dbq/nRV">
+              <field name="NUM">0.1</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="PeBF{!S_po$F-R$Fa?P|" x="-1550" y="-70">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="k1v]$@^%`Zs0GZK-wb|z">
+          <field name="TEXT">fold-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="40=G:nGuXSi-J0|Eap6?">
+          <value name="IF0">
+            <block type="logic_compare" id="PIjqUI~b)f_CwA6ZHs4L">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="Q(wU^6;VzY#qZ!)nXYL!">
+                  <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="{@6Q+,6ul}xGHvdJk?ku">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playSound" id="OZ.%w$lylTQ3qhw8#%?Y">
+              <field name="LOOP">FALSE</field>
+              <value name="VALUE">
+                <block type="loadSoundAdv" id="ASk@D8!T~+ZR5~^T$NaJ">
+                  <field name="TYPE">SOUND</field>
+                  <value name="URL">
+                    <shadow type="text" id="dZVK682K5;Uyb8H*rh4^">
+                      <field name="TEXT">./assets/sounds/fold.mp3</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="BoO~`pVFwM/;LvAz}U*C">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+                  <field name="REVERSED">TRUE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="getAnimations" id="+-t{0(*-.f(6n^(Il26I">
+                      <value name="OBJECTINPUT">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="groupList" id="5L!)vJ9t3X3c((ZZLr^?">
+                          <field name="FIELDNAME">animated_parts</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="variables_set" id="=dq.iwUi,|tDNjAl=F;7">
+                      <field name="VAR" id="ur1glP5[%:fN%:3G,^%!">Unfolded</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="PAio.fDV]fIs=^GZqVAJ">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="7W4@vDwPYG,#5zMM)sd." x="-390" y="-90">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="xX:`sEc|uA*K|@;;,:Jh">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="?fjJf[;cru{iVJcN6n2V">
+          <field name="TEXT">plastic-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="~Bf2Hr^ijMLkT,199B))">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Y}p)s1Fzb2?E4ph=v-os">
+              <field name="FIELDNAME">Plastic</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="XO5/!g3eBwEl1cZh6Q,2">
+              <field name="FIELDNAME">front_cover</field>
+            </shadow>
+            <block type="lists_create_with" id="$(%Fl2;llg0nAhotJ}lD">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="H`]WmKIUca8s/Zbcs*-k">
+                  <field name="FIELDNAME">back_cover</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="EyV[7ArsO`t|F,D$Gze0">
+                  <field name="FIELDNAME">front_cover</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="R*gU--d,Q3jJ/9:r(p.W" x="-390" y="70">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="lE;17n2@g,3Rrz]XQ+0%">
+          <field name="TEXT">carbon-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="a?dEF|]nm9)S?U1G}:MC">
+          <value name="VALUE2">
+            <shadow type="materialList" id="RmB9j[ME_HJVs]iVhB,H">
+              <field name="FIELDNAME">carboon</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList">
+              <field name="FIELDNAME">front_cover</field>
+            </shadow>
+            <block type="lists_create_with" id="XYr:iDE(KY3Lfv?[t.wo">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="ge_{%iexKy$zjHB~+.:G">
+                  <field name="FIELDNAME">back_cover</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="}NRi]*RY#kAo^KHQ3eE$">
+                  <field name="FIELDNAME">front_cover</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="1vr.tn%g)aLH4xmX:Ps]" x="-390" y="250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="9_{3y@/7NF2-/fwH,-{e">
+          <field name="TEXT">wood-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="wc{V$p#KUhj!?4R8u}_O">
+          <value name="VALUE2">
+            <shadow type="materialList" id="/,6|kTg:-eV`MGE,wTmM">
+              <field name="FIELDNAME">woood</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList">
+              <field name="FIELDNAME">front_cover</field>
+            </shadow>
+            <block type="lists_create_with" id="0cXb^F^9l%H,b$+wvR-+">
+              <mutation items="2"/>
+              <value name="ADD0">
+                <block type="objectList" id="?mN7l1mC5U#Hw?{[7)bG">
+                  <field name="FIELDNAME">back_cover</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="6t9;9SR|I8y31/=#}473">
+                  <field name="FIELDNAME">front_cover</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="0c|l@0QqbA;uqV/#M@9d" x="-390" y="430">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="%HU_P)nJu3|6@lOJobcJ">
+          <field name="NUM" min="0" max="10" step="0.1">2.5</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="4Le~o9N%U[gIY5L,Y$Y0">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="v[nf:,.kPgvi5|{]_n2l">
+          <field name="NUM" min="0" max="10" step="0.1">0.5</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <tab name="annotations" type="SecondaryTab" active="false" scrollx="24.8328196477205" scrolly="-191.43841992075517" scale="0.6139132535407592">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="3VHG]^590_A_2hMbFLu@" type="">show-annotation</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="=g3f+8of={J,C,!@iDql" x="150" y="70">
+      <field name="VAR" id="3VHG]^590_A_2hMbFLu@">show-annotation</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="(AcPsSN3j71_G9aSQoIm">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="(V(qp%i?*{3{=^=X!j28" x="150" y="150">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="text" id="rU1xW=;o,vu1A1Hoa0kg">
+          <field name="TEXT">annotation-button</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="7$o?sWmEP^16{z|__in4">
+          <mutation else="1"/>
+          <value name="IF0">
+            <block type="logic_compare" id="rn{_!+dKAsDM`Nhs%H*#">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="{)n=mrzMy@,pheRe5V5e">
+                  <field name="VAR" id="3VHG]^590_A_2hMbFLu@">show-annotation</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="/PZw.Mv`9vu]b,$~eyP-">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="addAnnotation" id="-T%@]}t@_VMdO,?2j4b4">
+              <value name="ANNOTATION">
+                <shadow type="text" id="7nSq00S1=J,-I.MU|D|?">
+                  <field name="TEXT">1</field>
+                </shadow>
+              </value>
+              <value name="TARGET">
+                <shadow type="objectList" id="7Na=@QfgK/d;FW6m|_?H">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="/Y!1BgZeO1E,W-%Nc9eZ">
+                  <field name="FIELDNAME">awl_annotation</field>
+                </block>
+              </value>
+              <value name="CONTENTS">
+                <shadow type="text" id="?*eRH0,)#pe^6`;Zh}vr">
+                  <field name="TEXT">Awl</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="m!i8Qc(S,q:!74y{DmA5">
+                  <field name="TEXT">an_1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="addAnnotation" id="u/uYhz#Z%$3JS3Trh,6k">
+                  <value name="ANNOTATION">
+                    <shadow type="text" id="gjA{X6xP/E#^3]PirECF">
+                      <field name="TEXT">2</field>
+                    </shadow>
+                  </value>
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="uEk3+)MaLS:HlGLG4B9u">
+                      <field name="FIELDNAME">big_knife_annotation</field>
+                    </block>
+                  </value>
+                  <value name="CONTENTS">
+                    <shadow type="text" id="e,]]#q~~wdL!tRENxY_c">
+                      <field name="TEXT">Big Knife</field>
+                    </shadow>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="?W?3+)#_Bfj(Ef.0^/Vr">
+                      <field name="TEXT">an_2</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="addAnnotation" id="mfkUbi{x88qf^`ibXr2$">
+                      <value name="ANNOTATION">
+                        <shadow type="text" id="[wpp$$BF1.V%uguko,s#">
+                          <field name="TEXT">3</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="$X[JfG=4d:IgmyoW?Rm;">
+                          <field name="FIELDNAME">bottle_opener_annotation</field>
+                        </block>
+                      </value>
+                      <value name="CONTENTS">
+                        <shadow type="text" id="T9YT+)9Od=`/04)@E2h4">
+                          <field name="TEXT">Bottle Opener</field>
+                        </shadow>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="s)fRF=r-s,wrRW*L_|l[">
+                          <field name="TEXT">an_3</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="addAnnotation" id="m,l|XRlU+!*xNocAdbQ[">
+                          <value name="ANNOTATION">
+                            <shadow type="text" id="Q}^HISM:c7jovk,XE:O1">
+                              <field name="TEXT">4</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="8e@|KBfd@=wDF6OI0T_J">
+                              <field name="FIELDNAME">can-opener_annotation</field>
+                            </block>
+                          </value>
+                          <value name="CONTENTS">
+                            <shadow type="text" id="B$,B)9,q8~l)lt$HchlD">
+                              <field name="TEXT">Can Opener</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="ep_cb8#SlPq?4%/Mp|br">
+                              <field name="TEXT">an_4</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="addAnnotation" id="JX7n`w|9;$?+Hm!dZB,c">
+                              <value name="ANNOTATION">
+                                <shadow type="text" id="z[5!(x%8sQ):B!Hc@UbS">
+                                  <field name="TEXT">5</field>
+                                </shadow>
+                              </value>
+                              <value name="TARGET">
+                                <shadow type="objectList">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="J`pXK{w;%?R!OB+IyW|?">
+                                  <field name="FIELDNAME">corkscrew_annotation</field>
+                                </block>
+                              </value>
+                              <value name="CONTENTS">
+                                <shadow type="text" id="HAci_^oYuQiWBY,A=TEF">
+                                  <field name="TEXT">Corkscrew</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id=":f?abC{ZUfVIw[I;q_x|">
+                                  <field name="TEXT">an_5</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="addAnnotation" id="$T#?~u`KND5gid(x/9=B">
+                                  <value name="ANNOTATION">
+                                    <shadow type="text" id="BU8m$;v_`O*)?PnjX/M^">
+                                      <field name="TEXT">6</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="TARGET">
+                                    <shadow type="objectList">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id="O+3LdAD,7~}(~qgOH4;T">
+                                      <field name="FIELDNAME">hook_annotation</field>
+                                    </block>
+                                  </value>
+                                  <value name="CONTENTS">
+                                    <shadow type="text" id="Jnl6oyeXAKz~]CWSRjgx">
+                                      <field name="TEXT">Hook</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="Jl6/#gsJ~=xrp1l_Sv}E">
+                                      <field name="TEXT">an_6</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="addAnnotation" id="^[080%RS}YqnB$vbOO_f">
+                                      <value name="ANNOTATION">
+                                        <shadow type="text" id="Ps7|0|U{iftc:;aloE$9">
+                                          <field name="TEXT">7</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="TARGET">
+                                        <shadow type="objectList">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="objectList" id="z#F|mVKd3zIEJ5i[ytlu">
+                                          <field name="FIELDNAME">saw_annotation</field>
+                                        </block>
+                                      </value>
+                                      <value name="CONTENTS">
+                                        <shadow type="text" id="]!h.)4HowSKamk^$^[J0">
+                                          <field name="TEXT">Saw</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="Uin=2jt$?qzw]~FiHf$/">
+                                          <field name="TEXT">an_7</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="addAnnotation" id="v-y7ld~BQEKZL{goSX??">
+                                          <value name="ANNOTATION">
+                                            <shadow type="text" id="KUS-xrQ#93EGl)%P=qh9">
+                                              <field name="TEXT">8</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="TARGET">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="objectList" id="i3ac/t~nf~$)(2%;nD[6">
+                                              <field name="FIELDNAME">scissors_annotation</field>
+                                            </block>
+                                          </value>
+                                          <value name="CONTENTS">
+                                            <shadow type="text" id="[]Ry{`@%x;BglE6t,T$Q">
+                                              <field name="TEXT">Scissors</field>
+                                            </shadow>
+                                          </value>
+                                          <value name="ID">
+                                            <shadow type="text" id="+b8lNVjiJTh`S@}l~$H1">
+                                              <field name="TEXT">an_8</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="addAnnotation" id="PbJ%seoA+T|!5[KcqO/C">
+                                              <value name="ANNOTATION">
+                                                <shadow type="text" id="q+j2K?{ta_0JHJtNRhW?">
+                                                  <field name="TEXT">9</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="TARGET">
+                                                <shadow type="objectList">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="objectList" id="uIS+}E+*LNJ}vyM/UIKS">
+                                                  <field name="FIELDNAME">small_knife_annotation</field>
+                                                </block>
+                                              </value>
+                                              <value name="CONTENTS">
+                                                <shadow type="text" id="$i1AT@nkp:yCTk$Jm:ad">
+                                                  <field name="TEXT">Small Knife</field>
+                                                </shadow>
+                                              </value>
+                                              <value name="ID">
+                                                <shadow type="text" id="NP~Mc7f0$Wv@,^[qzrwq">
+                                                  <field name="TEXT">an_9</field>
+                                                </shadow>
+                                              </value>
+                                              <next>
+                                                <block type="addAnnotation" id="{#nF-|2quO);22%,[%Ij">
+                                                  <value name="ANNOTATION">
+                                                    <shadow type="text" id="r%t0,ebYKuqr8=w`^H,z">
+                                                      <field name="TEXT">10</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="TARGET">
+                                                    <shadow type="objectList">
+                                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                                    </shadow>
+                                                    <block type="objectList" id="beZ|@;%:0QFyNm;JA45}">
+                                                      <field name="FIELDNAME">tweezers_blades_annotation</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="CONTENTS">
+                                                    <shadow type="text" id="7BY}78:]/+[IexEVIoY!">
+                                                      <field name="TEXT">Tweezers Blades</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <value name="ID">
+                                                    <shadow type="text" id="m0BR(-fWM5fGy^]9$e[O">
+                                                      <field name="TEXT">an_10</field>
+                                                    </shadow>
+                                                  </value>
+                                                  <next>
+                                                    <block type="addAnnotation" id="zElgj6ffj/DIB.X@`]z8">
+                                                      <value name="ANNOTATION">
+                                                        <shadow type="text" id="`.vg%5{Aq%c-iMsguEjL">
+                                                          <field name="TEXT">11</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="TARGET">
+                                                        <shadow type="objectList">
+                                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                                        </shadow>
+                                                        <block type="objectList" id="9qQeynY_ulWBeQm3DhWY">
+                                                          <field name="FIELDNAME">toothpick_annotation</field>
+                                                        </block>
+                                                      </value>
+                                                      <value name="CONTENTS">
+                                                        <shadow type="text" id="Cnw:0{T!9Mpx~n(@q#!Y">
+                                                          <field name="TEXT">Toothpick</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="mb+5+`%]:YqubS[MN?g%">
+                                                          <field name="TEXT">an_11</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <next>
+                                                        <block type="addAnnotation" id="jB7$RnFKVi6z@fC{6MeW">
+                                                          <value name="ANNOTATION">
+                                                            <shadow type="text" id="]+-Rcv)`(K.g%;9x.iC]">
+                                                              <field name="TEXT">12</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="TARGET">
+                                                            <shadow type="objectList">
+                                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                                            </shadow>
+                                                            <block type="objectList" id=")$b7iri^?2Z$:JG*a/3w">
+                                                              <field name="FIELDNAME">keyring_annotation</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="CONTENTS">
+                                                            <shadow type="text" id="ZVu==`+-x2;zpQ~mzTd$">
+                                                              <field name="TEXT">Key Ring</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="ID">
+                                                            <shadow type="text" id="x^,~Aq6`27./0V1zLF`q">
+                                                              <field name="TEXT">an_12</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <next>
+                                                            <block type="variables_set" id="1/d/MtN8#$5gSFH){2p%">
+                                                              <field name="VAR" id="3VHG]^590_A_2hMbFLu@">show-annotation</field>
+                                                              <value name="VALUE">
+                                                                <block type="logic_boolean" id="XhEHYzRy-0Pv%!=SxeDJ">
+                                                                  <field name="BOOL">TRUE</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="setCSSRuleStyle" id="o/S2p|yh#wOKe~=:i)as">
+                                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+                                                                  <field name="PROPERTY">backgroundImage</field>
+                                                                  <field name="PARENT">TRUE</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="text" id="U_bA$R)Fsd-CjF{LG*TW">
+                                                                      <field name="TEXT">url("../assets/icons/annotation_visible_button.svg")</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text" id="nD=6S,dDwaW_e2,s3{#h">
+                                                                      <field name="TEXT">#annotation-button</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="removeAnnotation" id="@GX8]]}]8i_C^V!n8c_@">
+              <value name="TARGET">
+                <shadow type="objectList" id="DQU%mQm!GI^qDY:=A!Yb">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="objectList" id="N^i:yL}B@c@mxy!jcW-_">
+                  <field name="FIELDNAME">awl_annotation</field>
+                </block>
+              </value>
+              <next>
+                <block type="removeAnnotation" id="s]{Cg:kXw/3uW-R@#ZHf">
+                  <value name="TARGET">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Y:0cCg~yk?lGjD=rY8P4">
+                      <field name="FIELDNAME">big_knife_annotation</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="removeAnnotation" id="ZJa](FSO@)PO88*U$vjE">
+                      <value name="TARGET">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="objectList" id="Zny;^O}iA=#r//ai!XXx">
+                          <field name="FIELDNAME">bottle_opener_annotation</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="removeAnnotation" id="wS;!5qjO]RUgGH0^[[%P">
+                          <value name="TARGET">
+                            <shadow type="objectList">
+                              <field name="FIELDNAME">&lt;none&gt;</field>
+                            </shadow>
+                            <block type="objectList" id="|]Df|a=CGtJeM05M1`I$">
+                              <field name="FIELDNAME">can-opener_annotation</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="removeAnnotation" id="IT09qd[mfp0Pt!|OE(jT">
+                              <value name="TARGET">
+                                <shadow type="objectList" id="hV1`V2M]+cL`_sAatT|T">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="objectList" id="2;Wh2m%Gt$4a.}LWuRZP">
+                                  <field name="FIELDNAME">corkscrew_annotation</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="removeAnnotation" id="!(N|wxi35#$L)5P.8bW0">
+                                  <value name="TARGET">
+                                    <shadow type="objectList" id=":NYQc?dOCM_U5NW+DgK`">
+                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                    </shadow>
+                                    <block type="objectList" id=")J+sl[O1[jJ/QFxSq3R+">
+                                      <field name="FIELDNAME">hook_annotation</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="removeAnnotation" id="8dDc;;UDjO7A{6b|}TIM">
+                                      <value name="TARGET">
+                                        <shadow type="objectList" id="D^=]!FyBCIh3UTwX;F,U">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                        </shadow>
+                                        <block type="objectList" id="f,b9ox%Ei{!IEhx~re}@">
+                                          <field name="FIELDNAME">saw_annotation</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="removeAnnotation" id="3$?Zf:WVq7)/q~f*}D-F">
+                                          <value name="TARGET">
+                                            <shadow type="objectList" id="16oE}rayEsYVJ8rtF2/f">
+                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                            </shadow>
+                                            <block type="objectList" id="jE0P?1=|*x6E?l-L08)f">
+                                              <field name="FIELDNAME">scissors_annotation</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="removeAnnotation" id="mGjq~!0-$s0a;5z[dxQz">
+                                              <value name="TARGET">
+                                                <shadow type="objectList" id="0!rkG{U=ho_gW=guXK4@">
+                                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                                </shadow>
+                                                <block type="objectList" id="IZB*PSbmDgx8#(|lR$(Z">
+                                                  <field name="FIELDNAME">small_knife_annotation</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="removeAnnotation" id="CH-8wY#+5*rL1PNKcq}%">
+                                                  <value name="TARGET">
+                                                    <shadow type="objectList" id="ei3,)gX8K]M/GYxc,MDF">
+                                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                                    </shadow>
+                                                    <block type="objectList" id="JPFkRa_sm/.$N@/sgV~`">
+                                                      <field name="FIELDNAME">tweezers_blades_annotation</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="removeAnnotation" id="n++vg]#O@F[Ey0IQBsG1">
+                                                      <value name="TARGET">
+                                                        <shadow type="objectList" id="!*f~9O/t(G%I)W`aumAD">
+                                                          <field name="FIELDNAME">&lt;none&gt;</field>
+                                                        </shadow>
+                                                        <block type="objectList" id="]|jpL-aG-`GXKLJOaway">
+                                                          <field name="FIELDNAME">toothpick_annotation</field>
+                                                        </block>
+                                                      </value>
+                                                      <next>
+                                                        <block type="removeAnnotation" id="i55YX[(Qrz8v*GU`gE^B">
+                                                          <value name="TARGET">
+                                                            <shadow type="objectList" id="H9F!02f8XU:z_u/G$,k1">
+                                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                                            </shadow>
+                                                            <block type="objectList" id="~Vpj!VTN,mylZOqJD{ui">
+                                                              <field name="FIELDNAME">keyring_annotation</field>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="variables_set" id="2lF9X0cPhy=95%#`o/pe">
+                                                              <field name="VAR" id="3VHG]^590_A_2hMbFLu@">show-annotation</field>
+                                                              <value name="VALUE">
+                                                                <block type="logic_boolean" id="f3;B@??W#,8u+f|)arri">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="setCSSRuleStyle" id="Mr`?]Ig`*({M#vUnHQld">
+                                                                  <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+                                                                  <field name="PROPERTY">backgroundImage</field>
+                                                                  <field name="PARENT">TRUE</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="text" id="kEblKPaZ`}aWCj,Eip2`">
+                                                                      <field name="TEXT">url("../assets/icons/annotation_hidden_button.svg")</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text" id="bKVAY];?A%Eelk(NZ3V^">
+                                                                      <field name="TEXT">#annotation-button</field>
+                                                                    </shadow>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1217.9999633789062" viewport-y="28" viewport-w="300" viewport-h="377" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
